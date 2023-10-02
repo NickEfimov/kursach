@@ -2,7 +2,7 @@ def blurer(number):
     digits = ''.join(str(i) for i in number)
     if len(digits) == 16:
         card_number = digits
-        c_masked_number = card_number[:4] + " " + card_number[4:6] + "XX" + " " + "XXXX" + " " + card_number[-4:]
+        c_masked_number = card_number[:4] + " " + card_number[4:6] + "**" + " " + "****" + " " + card_number[-4:]
         return c_masked_number
     if len(digits) == 20:
         account_number = digits
