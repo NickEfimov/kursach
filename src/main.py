@@ -1,7 +1,7 @@
 import json
-from utils import date_reformat, blurer, second_string
+from utils import date_reformat, second_string
 
-with open('operations.json', 'r', encoding='utf8') as file:
+with open('../operations.json', 'r', encoding='utf8') as file:
     operations = json.load(file)
     executed_operations = list(filter(lambda x: x.get('state') == 'EXECUTED', operations))
     sorted_data = sorted(executed_operations, key=lambda x: x['date'], reverse=True)

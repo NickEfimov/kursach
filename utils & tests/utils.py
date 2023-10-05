@@ -1,4 +1,5 @@
 def blurer(number):
+    '''приводит номера счёта и карты в нужный формат'''
     digits = ''.join(str(i) for i in number)
     if len(digits) == 16:
         card_number = digits
@@ -11,7 +12,7 @@ def blurer(number):
 
 
 def second_string(data):
-    '''data = "значение по ключу "from" or "to""'''
+    '''формиует нужный формат отравителя""'''
     parts = data.split(" ")
     number = parts[-1]
     specie = ' '.join(parts[:-1])
@@ -19,7 +20,7 @@ def second_string(data):
 
 
 def date_reformat(date):
-    '''date = значение по ключу "date"'''
+    '''оформление даты в нужном формате'''
     halfs = date.split("T")
     old_date = halfs[0]
     date_lst = old_date.split("-")
