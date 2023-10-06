@@ -1,4 +1,4 @@
-from utils import *
+from src.utils import blurer, second_string, date_reformat
 import pytest
 
 
