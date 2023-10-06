@@ -12,7 +12,7 @@ def blurer(number):
 
 
 def second_string(data):
-    '''формиует нужный формат отравителя""'''
+    '''формиует нужный формат отравителя'''
     parts = data.split(" ")
     number = parts[-1]
     specie = ' '.join(parts[:-1])

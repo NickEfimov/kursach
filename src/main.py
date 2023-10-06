@@ -1,5 +1,5 @@
 import json
-from utils import date_reformat, second_string
+from utils_and_tests.utils import date_reformat, second_string
 
 with open('../operations.json', 'r', encoding='utf8') as file:
     operations = json.load(file)
